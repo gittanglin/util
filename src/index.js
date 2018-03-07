@@ -3,5 +3,9 @@ import CommonUtil from './utils/commonUtil'
 
 module.exports = {
   TimeUtil,
-  CommonUtil
+  CommonUtil,
+  test() {
+    console.log('=====')
+  }
 }
+
