@@ -2,7 +2,7 @@
   "name": "tl-js-module-utils",
   "version": "1.0.3",
   "description": "常用方法封装",
-  "main": "./dist/app.js",
+  "main": "./dist/index.min.js",
   "scripts": {
     "test": "mocha --require babel-register",
     "mac-build": "export NODE_ENV=prod&&webpack --config webpack.config.js --mode production",

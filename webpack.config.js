@@ -21,7 +21,7 @@ module.exports = {
   devtool: NODE_ENV == NODE_ENV_CONFIG.DEV ? 'inline-source-map' : 'cheap-module-source-map',
   output: {
     path: path.join(__dirname, './dist'),
-    filename: NODE_ENV == NODE_ENV_CONFIG.DEV ? '[name].[hash].js' : '[name].js',
+    filename: NODE_ENV == NODE_ENV_CONFIG.DEV ? 'index.min.js' : 'index.min.js',
     chunkFilename: '[name].[chunkhash:5].js',
     publicPath: "/"
   },
