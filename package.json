@@ -1,6 +1,6 @@
 {
   "name": "tl-js-module-utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "常用方法封装",
   "main": "./dist/index.min.js",
   "scripts": {
@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/gittanglin/util#readme",
   "devDependencies": {
-    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
