@@ -1,8 +1,8 @@
 {
   "name": "tl-js-module-utils",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "常用方法封装",
-  "main": "./dist/index.min.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "mocha --require babel-register",
     "mac-build": "export NODE_ENV=prod&&webpack --config webpack.config.js --mode production",
