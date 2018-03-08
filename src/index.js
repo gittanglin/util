@@ -1,11 +1,8 @@
 import TimeUtil from './utils/timeUtil'
 import CommonUtil from './utils/commonUtil'
 
-module.exports = {
-  TimeUtil,
-  CommonUtil,
-  test() {
-    console.log('=====')
-  }
-}
 
+module.exports = {
+    TimeUtil,
+    CommonUtil
+}
