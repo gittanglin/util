@@ -1,8 +1,4 @@
-import TimeUtil from './utils/timeUtil'
-import CommonUtil from './utils/commonUtil'
+import timeUtil from './utils/timeUtil'
+import commonUtil from './utils/commonUtil'
 
-
-export default {
-  TimeUtil,
-  CommonUtil
-}
+export default{timeUtil, commonUtil};

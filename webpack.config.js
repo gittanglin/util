@@ -13,29 +13,22 @@ const NODE_ENV_CONFIG = {
 
 module.exports = {
   entry: {
-    app: [
-      path.join(__dirname, 'src/index.js')
-    ],
+    'index': './src/index.js'
   },
-  devtool: NODE_ENV == NODE_ENV_CONFIG.DEV ? 'inline-source-map' : 'cheap-module-source-map',
+  devtool: 'cheap-module-source-map',
   output: {
-    path: path.join(__dirname, './src'),
-    filename: 'index.min.js',
-    chunkFilename: '[name].[chunkhash:5].js',
-    publicPath: "/"
+    path: path.join(__dirname, './dist'),
+    filename: '[name].min.js',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        use: ['babel-loader?cacheDirectory=true', 'eslint-loader'],
-        include: path.join(__dirname, 'src'),
+        use: ['babel-loader'],
         exclude: path.join(__dirname, 'node_modules'),
       }
     ]
-  },
-  resolve: {
-    alias: {}
   },
   plugins: [
     new CleanWebpackPlugin(['dist'])
